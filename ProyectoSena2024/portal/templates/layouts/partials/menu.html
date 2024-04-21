@@ -1,0 +1,22 @@
+{% load static %}
+
+<header class="header">
+
+  <div class="logo_menu">
+    <img src="{% static 'images/logo.png' %}" class="logo__menu" alt="logo">
+  </div>
+
+  <h4 class="saludo">Hola Dr. Herwing Ordóñez</h4>
+  
+  <div class="button">
+      <a href="{% url 'logout_session' %}" class="button__salir">Salir</a>
+  </div>
+
+</header>
+
+<div class="menu">
+  <nav>
+    <a href="{% url 'add_basica' %}" class="nav__menu">Registrar paciente</a>
+    <a href="{% url 'read_basica' %}" class="nav__menu">Ver información paciente</a>
+  </nav>
+</div>

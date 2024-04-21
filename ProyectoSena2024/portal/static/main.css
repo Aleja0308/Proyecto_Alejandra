@@ -1,0 +1,82 @@
+/*Inicio diseño ingreso.html*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-image: url(images/fondo.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Gill Sans Extrabold", Helvetica, sans-serif
+}
+
+.header_logo{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.logo{
+  height: 150px;
+}
+
+.login{
+  height: calc(100vh - 230px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__login{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #149483;
+  min-width: 320px;
+  border-radius: 8px;
+  padding: 20px;
+  height: 200px;
+}
+
+.form__control{
+  display: flex;
+  gap: 5px;
+  color: #98ffe0;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.form__control--row{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: small;
+}
+
+.form__input{
+  width: 100%;
+  font-size: medium;
+  padding: 10px;
+  gap: 1rem;
+  border-radius: 8px;
+  border: solid 0.5px ;
+  color: #149483;
+  border-color: #149483;
+}
+
+.form__button{
+  font-size: medium;
+  width: 100%;
+  padding: 10px;
+  gap: 1rem;
+  border-radius: 8px;
+  border: solid 0.5px ;
+  color: #149483;
+  margin-top: 25px;
+}

@@ -1,0 +1,56 @@
+{% extends "layouts/index.html" %}
+
+{% block content %}
+
+{% for basica in basicas %}
+
+<div class="card">
+  <div class="card-body">
+    <div class="info-item">
+      <span class="info-label">Documento:</span>
+      <span class="info-value">{{ basica.documento }}</span>
+    </div>
+
+    <div class="info-item">
+      <span class="info-label">Número de documento:</span>
+      <span class="info-value">{{ basica.num_documento }}</span>
+    </div>
+
+    <div class="info-item">
+      <span class="info-label">Nombres:</span>
+      <span class="info-value">{{ basica.nombres }}</span>
+    </div>
+
+    <div class="info-item">
+      <span class="info-label">Apellidos:</span>
+      <span class="info-value">{{ basica.apellidos }}</span>
+    </div>
+
+    <div class="info-item">
+      <span class="info-label">Fecha de nacimiento:</span>
+      <span class="info-value">{{ basica.fecha_nacimiento }}</span>
+    </div>
+
+    <div class="info-item">
+      <span class="info-label">Lugar de nacimiento:</span>
+      <span class="info-value">{{ basica.lugar_nacimiento }}</span>
+    </div>
+
+    <div class="info-item">
+      <span class="info-label">Teléfono:</span>
+      <span class="info-value">{{ basica.telefono }}</span>
+    </div>
+
+    <div class="info-item">
+      <span class="info-label">Correo electrónico:</span>
+      <span class="info-value">{{ basica.correo_electronico }}</span>
+    </div>
+
+    <!-- Agrega más campos aquí -->
+
+  </div>
+</div>
+
+{% endfor %}
+
+{% endblock %}

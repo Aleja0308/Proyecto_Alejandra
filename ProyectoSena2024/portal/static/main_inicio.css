@@ -1,0 +1,255 @@
+/*Inicio diseño menu.html*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+body{
+  background-color: #149483;
+  font-family: "Gill Sans Extrabold", Helvetica, sans-serif
+}
+
+.header{
+  background-color: #FEFDED;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.saludo{
+  margin-left: 690px;
+}
+
+.logo_menu{
+  display: flex;
+  padding: auto;
+}
+
+.logo__menu{
+  height: 50px;
+  justify-content: left;
+
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  align-items: center;
+}
+
+.menu nav{
+  display: flex;
+  gap: 30px;
+}
+
+.menu nav a{
+  text-decoration: none;
+  color: #c0c7bd;
+}
+
+.menu nav a:hover{
+  color: white;
+}
+
+.button__salir{
+  padding: 5px;
+  width: 50px;
+  border: 1px solid #149483;
+  border-radius: 10px;
+  background: #149483;
+  cursor: pointer;
+  color: #FEFDED;
+}
+
+.button__salir:hover{
+    background-color: #8fc4c1;
+    color: #149483;
+}
+
+
+/*Se inicia diseño de read_inicio*/
+
+.info-container {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Margen automático en los lados para centrar */
+    max-width: 320px; /* Ancho máximo de la tarjeta */
+    padding: 20px; /* Añade espacio interior a la tarjeta */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.info-item {
+    margin-bottom: 10px;
+}
+
+.info-label {
+    font-weight: bold;
+}
+
+.info-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.edit-button, .delete-button {
+    padding: 10px 15px;
+    background-color: #149483;
+    border: none;
+    color: #c0c7bd;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.edit-button:hover, .delete-button:hover {
+    background-color: #8fc4c1;
+    color: #149483;
+}
+
+/*Se inicia diseño de read_basica*/
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.info-item {
+    margin-bottom: 10px;
+}
+
+.info-label {
+    font-weight: bold;
+}
+
+.info-value {
+    margin-left: 10px;
+}
+
+/*Se inicia diseñor de delete_basica*/
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 20px; /* Añade espacio a los lados */
+}
+
+.alert {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.alert h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #721c24;
+}
+
+.delete-button {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.delete-button:hover {
+    background-color: #721c24;
+    color: #FEFDED;
+}
+
+/*Se inicia diseño de basica*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form {
+  width: 100%;
+}
+
+.form p {
+  margin-bottom: 10px;
+}
+
+.form label {
+  display: block;
+  font-weight: bold;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: white;
+  color: #149483;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #8fc4c1;
+  color: white;
+}
+

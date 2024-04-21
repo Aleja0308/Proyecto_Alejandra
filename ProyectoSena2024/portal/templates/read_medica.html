@@ -1,0 +1,66 @@
+{% extends "layouts/index.html" %}
+
+{% block content %}
+
+{% for medica in medicas %}
+
+<table>
+  <tr>
+    <th>Historial médico</th>
+    <td>{{ medica.historial_medico }}</td>
+  </tr>
+
+  <tr>
+    <th>Sistematología actual</th>
+    <td>{{ medica.sistematologia_actual }}</td>
+  </tr>
+
+  <tr>
+    <th>Medicamentos actuales</th>
+    <td>{{ medica.medicamentos_actuales }}</td>
+  </tr>
+
+  <tr>
+    <th>Exámenes laboratorio</th>
+    <td>{{ medica.examenes_laboratorio }}</td>
+  </tr>
+
+  <tr>
+    <th>Exámenes imagenología</th>
+    <td>{{ medica.examenes_imagenologia }}</td>
+  </tr>
+
+  <tr>
+    <th>Antecedentes familiares</th>
+    <td>{{ medica.antecedentes_familiares }}</td>
+  </tr>
+
+  <tr>
+    <th>Antecedentes personales</th>
+    <td>{{ medica.antecedentes_personales }}</td>
+  </tr>
+
+  <tr>
+    <th>Tensión arterial</th>
+    <td>{{ medica.tension_arterial }}</td>
+  </tr>
+
+  <tr>
+    <th>Glucemia</th>
+    <td>{{ medica.glucemia }}</td>
+  </tr>
+
+  <tr>
+    <th>Saturación de oxígeno</th>
+    <td>{{ medica.sat_02 }}</td>
+  </tr>
+
+  {% comment %}
+
+  {% endcomment %}
+
+</table>
+
+{% endfor %}
+
+{% endblock %}

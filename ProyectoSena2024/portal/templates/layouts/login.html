@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicina Holística</title>
+  <link rel="icon" href="{% static " images/icono.png" %}" type="image/x-icon">
+  <link rel="stylesheet" href="{% static "main.css" %}">
+</head>
+
+<body>
+
+  <header>
+
+    <div class="header_logo">
+      <a href="login.html">
+        <img src="{% static "images/logo.png" %}" class="logo" alt="logo">
+      </a>
+    </div>
+
+  </header>
+
+  <section class="login">
+
+    <div class="card__login">
+      <form action="{% url "login" %}" method="post">
+        {% csrf_token %}
+        <div class="contenedor_ingreso">
+          <div>
+            <label for="username" class="form__control"></label>
+            <input class="form__input" type="text" id="username" name="username" placeholder="Usuario" required
+              >
+          </div>
+
+          <div>
+            <label for="password" class="form__control"></label>
+            <input class="form__input" type="password" id="" name="password" placeholder="Contraseña"
+              required>
+          </div>
+
+          <div>
+            <button class="form__button" type="submit">Iniciar sesión</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+  </section>
+
+</body>
+
+</html>
